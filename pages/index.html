@@ -12,16 +12,32 @@
     <link rel="stylesheet" type="text/css" href="/styles/style.css" />
   </header>
   <body>
-    <div class="product-container">
+    <div id="loader" class="loader"></div>
+    <div id="product-container" class="product-container animation">
       <div class="product-first-image-container">
-        <img src="/assets/images/component-01/Image-01@2x.jpg" class="first-image"/>
+        <img
+          src="/assets/images/component-01/Image-01@2x.jpg"
+          class="first-image"
+          id="firstImg"
+          onclick="toggleImg('firstImg', 'product')"
+        />
       </div>
       <div class="product-second-image-container">
         <div class="product-second-image-top-container">
-          <img src="/assets/images/component-01/Image-02@2x.jpg" class="second-image" />
+          <img
+            src="/assets/images/component-01/Image-02@2x.jpg"
+            class="second-image"
+            id="secondImg"
+            onclick="toggleImg('secondImg', 'product')"
+          />
         </div>
         <div class="product-second-image-bottom-container">
-          <img src="/assets/images/component-01/Image-03@2x.jpg" class="third-image" />
+          <img
+            src="/assets/images/component-01/Image-03@2x.jpg"
+            class="third-image"
+            id="thirdImg"
+            onclick="toggleImg('thirdImg', 'product')"
+          />
         </div>
       </div>
       <div class="product-description-container">
@@ -43,44 +59,90 @@
         </section>
       </div>
     </div>
-    <div class="card-header-container">
+    <div id="card-header-container" class="card-header-container animation">
       <h1>All The Latest From AEG</h1>
     </div>
-    <div class="card-container">
+    <div id="card-container" class="card-container animation">
       <div class="card">
-        <img src="/assets/images/component-02/Image-01.jpg" />
+        <img
+          src="/assets/images/component-02/Image-01.jpg"
+          class="card-first-img"
+          id="cardFirstImg"
+          onclick="toggleImg('cardFirstImg', 'card')"
+        />
         <hr class="card-image-underneath-line"/>
         <h2>Summer Lunch Menu By Mark Best</h2>
         <p>
           AEG ambassador Mark Best's summer eats are guaranteed to help you make the most of the 
           warmer weather and entertaining at home.
         </p>
-        <h3>Read More</h3>
+        <h3
+          class="card-first-read-more"
+          id="cardFirstReadMore"
+          onclick="toggleReadMore('cardFirstReadMore')"
+        >
+          Read More
+        </h3>
         <hr class="underneath-read-more" />
       </div>
       <div class="card">
-        <img src="/assets/images/component-02/Image-02.jpg" />
+        <img
+          src="/assets/images/component-02/Image-02.jpg"
+          class="card-second-img"
+          id="cardSecondImg"
+          onclick="toggleImg('cardSecondImg', 'card')"
+        />
         <hr class="card-image-underneath-line"/>
         <h2>A Traditional Christmas Eve, Mark Best Style</h2>
         <p>
           One of Australia's best chefs and AEG ambassador, Mark Best, shares his favourite Christmas
           Eve menu which is sure to impress your guests.
         </p>
-        <h3>Read More</h3>
+        <h3
+          class="card-second-read-more"
+          id="cardSecondReadMore"
+          onclick="toggleReadMore('cardSecondReadMore')"
+        >
+          Read More
+        </h3>
         <hr class="underneath-read-more" />
       </div>
       <div class="card">
-        <img src="/assets/images/component-02/Image-03.jpg" />
+        <img
+          src="/assets/images/component-02/Image-03.jpg"
+          class="card-third-img"
+          id="cardThirdImg"
+          onclick="toggleImg('cardThirdImg', 'card')"
+        />
         <hr class="card-image-underneath-line"/>
         <h2>Taking Taste Further</h2>
         <p>
           This exclusive cookbook gives you all the know-how you need. We've designed it to make sure 
           you get the most out of our products - and the best out of your food.
         </p>
-        <h3>Read More</h3>
+        <h3
+          class="card-third-read-more"
+          id="cardThirdReadMore"
+          onclick="toggleReadMore('cardThirdReadMore')"  
+        >
+          Read More
+        </h3>
         <hr class="underneath-read-more" />
       </div>
     </div>
-  </body>
 
+    <!-- The Modal -->
+    <!-- For Images -->
+    <div id="modal" class="modal">
+      <div id="modalContent" class="modal-content">
+        <span class="close">&times;</span>
+        <!-- For Image -->
+        <img id="imageRender" />
+        <!-- For Read More -->
+        <div id="readMore" class="read-more"></div>
+      </div>
+    </div>
+
+    <script src="/services/utils/utils.js"></script>
+  </body>
 </html>
