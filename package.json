@@ -5,9 +5,9 @@
   "main": "main/index.html",
   "scripts": {
     "start": "node app.js",
-    "dev": "nodemon app.js",
+    "serve": "nodemon app.js",
     "compile": "node-sass styles/scss/index.scss styles/style.css",
-    "build": "",
+    "build": "webpack --config webpack.config.js",
     "test": ""
   },
   "repository": {
@@ -31,5 +31,8 @@
     "node-sass": "^9.0.0",
     "nodemon": "^3.1.0",
     "serve-favicon": "^2.5.0"
+  },
+  "devDependencies": {
+    "webpack-cli": "^5.1.4"
   }
 }

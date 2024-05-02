@@ -39,6 +39,9 @@
   width: 50%;
   background-color: #fbfbfb;
   border-radius: 20px; }
+  @media screen and (max-width: 1024px) and (min-width: 320px) {
+    .modal-content {
+      width: 80% !important; } }
 
 #imageRender {
   width: 100%;
@@ -282,12 +285,14 @@ body {
     cursor: pointer;
     color: #cd0909; }
 
-.animation {
-  opacity: 0;
-  transform: translateX(-300px);
-  transition: all 0.7s ease-out;
-  transition-delay: 0.4s; }
+@media screen and (max-width: 1920px) and (min-width: 850px) {
+  .animation {
+    opacity: 0;
+    transform: translateX(-300px);
+    transition: all 0.7s ease-out;
+    transition-delay: 0.4s; } }
 
-.scroll-animation {
-  opacity: 1;
-  transform: translateX(0); }
+@media screen and (max-width: 1920px) and (min-width: 850px) {
+  .scroll-animation {
+    opacity: 1;
+    transform: translateX(0); } }
