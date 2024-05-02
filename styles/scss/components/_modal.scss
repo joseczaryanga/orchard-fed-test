@@ -20,6 +20,10 @@
   width: 50%;
   background-color: #fbfbfb;
   border-radius: 20px;
+
+  @media screen and (max-width: 1024px) and (min-width: 320px) {
+    width: 80% !important;
+  }
 }
 
 #imageRender {

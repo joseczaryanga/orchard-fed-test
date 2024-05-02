@@ -67,10 +67,14 @@ function toggleImg(id, type) {
     src = '/assets/images/component-02/Image-03@2x.jpg';
   }
 
+  
+  const isMobile = ( window.innerWidth <= 1280 ) && ( window.innerHeight <= 1366 ); 
+  console.log("isMobile: " + isMobile);
+
   const imageRender = document.getElementById('imageRender');
   const modalContent = document.getElementById('modalContent');
   const readMore = document.getElementById('readMore');
-  modalContent.style.width = id === 'firstImg' ? '27%' : '50%';
+  modalContent.style.width = id === 'firstImg' && !isMobile ? '27%' : '50%';
   modal.style.display = "block";
   imageRender.style.display = "block";
   imageRender.src = type === 'product' ? img.src : src;
@@ -98,11 +102,13 @@ function toggleReadMore(id) {
     Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing 
     software like Aldus PageMaker including versions of Lorem Ipsum.</div>`;
 
+  const isMobile = ( window.innerWidth <= 1280 ) && ( window.innerHeight <= 1366 ); 
+  console.log("isMobile: " + isMobile);
   const imageRender = document.getElementById('imageRender');
   const readMore = document.getElementById('readMore');
   modal.style.display = "block";
   readMore.style.display = "block";
-  modalContent.style.width = '40%';
+  modalContent.style.width = !isMobile ? '40%' : '80%';
   readMore.innerHTML = readMoreContent;
   imageRender.style.display = "none";
 }
