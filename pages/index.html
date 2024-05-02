@@ -5,27 +5,68 @@
     <meta charset="utf-8" />
     <title ng-bind="windowTitle" class="ng-binding">Orchard FED test</title>
     <base href="/" />
-    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1" />
     <link rel="icon" type="image/x-icon" href="/assets/images/icons/favicon/favicon.ico" />
     <link rel="icon" type="image/png" href="/assets/images/icons/favicon/favicon-16x16.png" sizes="16x16" />
     <link rel="icon" type="image/png" href="/assets/images/icons/favicon/favicon-16x16.png" sizes="32x32" />
     <link rel="stylesheet" type="text/css" href="/styles/main.css" />
   </header>
   <body>
-    <section>
-      <div class="flex-container">
-        <div class="flex-item-left">
-          <img src="/assets/images/component-01/Image-01@2x.jpg" class="man-icon"/>
+    <div class="product-container">
+      <div class="product-first-image-container">
+        <img src="/assets/images/component-01/Image-01@2x.jpg" class="first-image"/>
+      </div>
+      <div class="product-second-image-container">
+        <div class="product-second-image-top-container">
+          <img src="/assets/images/component-01/Image-02@2x.jpg" class="second-image" />
         </div>
-        <div class="flex-item-center">
-          <img src="/assets/images/component-01/Image-01.jpg" style="height: 50px; width: 50px"/>
-        </div>
-        <div class="flex-item-right">
-          <img src="/assets/images/component-01/Image-01.jpg" style="height: 50px; width: 50px"/>
+        <div class="product-second-image-bottom-container">
+          <img src="/assets/images/component-01/Image-03@2x.jpg" class="third-image" />
         </div>
       </div>
-    </section>
-    <section>This is bottom</section>
+      <div class="product-description-container">
+        <section class="description-content">
+          <h1>Answer Your Body's Need</h1>
+          <hr class="description-line"/>
+          <p>
+            The way ingredients are sourced affects the way we nourish our bodies.
+            Author Mark Schatzer believes our body naturally develops an appetite for
+            the foods and nutrients it needs to be healthy, but that artificial flavourings
+            are getting in the way. This can be reversed by focusing on high-quality ingredients
+            and being mindful as your appetite guides you to consume according to your body's needs.
+          </p>
+        </section>
+      </div>
+    </div>
+    <div class="card-header-container">
+      <h1>All The Latest From AEG</h1>
+    </div>
+    <div class="card-container">
+      <div class="card">
+        <img src="/assets/images/component-02/Image-01.jpg" />
+        <h2>Summer Lunch Menu By Mark Best</h2>
+        <p>
+          AEG ambassador Mark Best's summer eats are guaranteed to help you make the most of the 
+          warmer weather and entertaining at home.
+        </p>
+      </div>
+      <div class="card">
+        <img src="/assets/images/component-02/Image-02.jpg" />
+        <h2>A Traditional Christmas Eve, Mark Best Style</h2>
+        <p>
+          One of Australia's best chefs and AEG ambassador, Mark Best, shares his favourite Christmas
+          Eve menu which is sure to impress your guests.
+        </p>
+      </div>
+      <div class="card">
+        <img src="/assets/images/component-02/Image-03.jpg" />
+        <h2>Taking Taste Further</h2>
+        <p>
+          This exclusive cookbook gives you all the know-how you need. We've designed it to make sure 
+          you get the most out of our products - and the best out of your food.
+        </p>
+      </div>
+    </div>
   </body>
 
 </html>
