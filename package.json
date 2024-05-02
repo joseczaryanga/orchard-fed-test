@@ -1,0 +1,32 @@
+{
+  "name": "orchard-fed",
+  "version": "1.0.0",
+  "description": "online exam for orchard-fed",
+  "main": "main/index.html",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joseczaryanga/orchard-fed-test.git"
+  },
+  "keywords": [
+    "online",
+    "exam",
+    "orchard",
+    "fed"
+  ],
+  "author": "jcyanga628@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joseczaryanga/orchard-fed-test/issues"
+  },
+  "homepage": "https://github.com/joseczaryanga/orchard-fed-test#readme",
+  "dependencies": {
+    "express": "^4.19.2",
+    "nodemon": "^3.1.0",
+    "serve-favicon": "^2.5.0"
+  }
+}
