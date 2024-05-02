@@ -1,0 +1,134 @@
+@font-face {
+  font-family: 'OpenSans';
+  src: url("../../../assets/fonts/OpenSans/OpenSans-Regular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'OpenSansLight';
+  src: url("../../../assets/fonts/OpenSans/OpenSans-Light.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'OpenSansSemiBold';
+  src: url("../../../assets/fonts/OpenSans/OpenSans-SemiBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'OpenSansCondensed';
+  src: url("../../../assets/fonts/OpenSans_Condensed/OpenSans_Condensed-Regular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'OpenSansSemiCondensed';
+  src: url("../../../assets/fonts/OpenSans_SemiCondensed/OpenSans_SemiCondensed-Regular.ttf") format("truetype"); }
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px; }
+
+body {
+  background-color: #0e1414;
+  font-family: "Inv Maison Neue", "Maison Neue", -apple-system, BlinkMacSystemFont, "Open Sans", open-sans, sans-serif;
+  font-size: 12px;
+  color: #9ca4ab; }
+
+.product-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin: 175px 0px 0px 0px;
+  padding: 10px 10px 10px 10px; }
+  .product-container .description-content {
+    width: 400px;
+    padding: 10px 10px 0px 0px; }
+    .product-container .description-content > h1 {
+      font-family: OpenSansLight;
+      text-transform: uppercase;
+      font-weight: 100;
+      line-height: 2.2;
+      font-size: 27px;
+      text-align: center;
+      color: #e2e2e2;
+      margin-top: -20px;
+      margin-left: -15px; }
+    .product-container .description-content > .description-line {
+      color: #e2e2e2; }
+    .product-container .description-content > p.top-description {
+      font-family: 'OpenSansLight';
+      font-size: 18px;
+      color: #cecece;
+      margin-left: 2px;
+      margin-top: 30px;
+      line-height: 1.7; }
+    .product-container .description-content > h3 {
+      margin-top: 45px;
+      font-family: 'OpenSansSemiBold';
+      text-transform: uppercase;
+      color: #cd0909;
+      font-size: 15px; }
+    .product-container .description-content > p.bottom-description {
+      font-family: 'OpenSansLight';
+      font-size: 17px;
+      color: #fffbfb;
+      margin-left: 2px;
+      margin-top: 25px;
+      line-height: 1.8;
+      font-weight: 700; }
+
+.first-image {
+  width: 390px; }
+
+.second-image {
+  width: 390px; }
+
+.third-image {
+  width: 390px;
+  margin-top: 18px; }
+
+.card-header-container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 200px; }
+  .card-header-container > h1 {
+    font-family: 'OpenSansLight';
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 42px;
+    color: #e1dddd; }
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 60px;
+  margin-bottom: 200px; }
+
+.card {
+  width: 395px; }
+  .card > .card-image-underneath-line {
+    border: 2px solid #cd0909;
+    width: 385px;
+    margin-top: -3px; }
+  .card > h2 {
+    margin-top: 35px;
+    font-family: 'OpenSansLight';
+    font-size: 17px;
+    color: #fffbfb;
+    font-weight: 600;
+    word-spacing: 2px; }
+  .card > p {
+    margin-top: 20px;
+    font-family: 'OpenSansLight';
+    font-size: 15px;
+    line-height: 1.9;
+    color: #cecece; }
+  .card > h3 {
+    margin-top: 30px;
+    font-family: 'OpenSansSemiBold';
+    color: #fffbfb;
+    text-transform: uppercase;
+    font-size: 15px; }
+  .card > .underneath-read-more {
+    border: solid 1px #cd0909;
+    width: 87px;
+    margin-top: 8px; }
